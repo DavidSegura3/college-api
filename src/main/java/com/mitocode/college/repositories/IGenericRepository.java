@@ -1,0 +1,8 @@
+package com.mitocode.college.repositories;
+
+import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+import org.springframework.data.repository.NoRepositoryBean;
+
+@NoRepositoryBean
+public interface IGenericRepository<T, ID> extends ReactiveMongoRepository<T, ID> {
+}
